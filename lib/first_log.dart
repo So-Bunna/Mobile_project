@@ -17,8 +17,7 @@ class PersonalCoachScreen extends StatelessWidget {
               const SizedBox(height: 20),
               CircleAvatar(
                 radius: 50,
-                backgroundImage:
-                    AssetImage('assets/images/photo_2025-04-03_13-23-28.jpg'),
+                backgroundImage: AssetImage('assets/images/hello.jpg'),
               ),
               const SizedBox(height: 24),
               const Text(
