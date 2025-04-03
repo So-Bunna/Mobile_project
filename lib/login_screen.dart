@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:login/classic_screen.dart';
+
 import 'package:login/create_acc.dart';
+import 'package:login/first_log.dart';
 
 class LoginScreen extends StatelessWidget {
   @override
@@ -20,7 +21,7 @@ class LoginScreen extends StatelessWidget {
                   borderRadius:
                       BorderRadius.circular(10), // Optional: Rounded corners
                   image: DecorationImage(
-                    image: AssetImage('assets/images/car.png'),
+                    image: AssetImage('assets/images/logo.png'),
                     fit: BoxFit.cover, // Adjust the image fit
                   ),
                 ),
@@ -67,7 +68,7 @@ class LoginScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => ClassicPlanScreen()));
+                            builder: (context) => PersonalCoachScreen()));
                   },
                   child: Text("Login", style: TextStyle(color: Colors.white)),
                 ),

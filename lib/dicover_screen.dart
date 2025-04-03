@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login/classic_screen.dart';
+import 'package:login/me_screen.dart';
+
 import 'package:login/sixpack.dart';
 import 'package:login/arm.dart';
 import 'package:login/chest.dart';
@@ -25,7 +27,7 @@ class DiscoverScreen extends StatelessWidget {
             //   // If "Personal" is tapped
             //   Navigator.push(
             //     context,
-            //     MaterialPageRoute(builder: (context) => ClassicPlanScreen()),
+            //     MaterialPageRoute(builder: (context) => HomeScreen()),
             //   );
             // } else if (index == 3) {
             //   // If "Daily" is tapped
@@ -33,12 +35,12 @@ class DiscoverScreen extends StatelessWidget {
             //     context,
             //     MaterialPageRoute(builder: (context) => ClassicPlanScreen()),
             //   );
-            // } else if (index == 4) {
-            //   // If "Me" is tapped
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(builder: (context) => ClassicPlanScreen()),
-            //   );
+          } else if (index == 4) {
+            // If "Me" is tapped
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ProfileScreen()),
+            );
           }
         },
         items: const [
@@ -148,7 +150,7 @@ class DiscoverScreen extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         image: DecorationImage(
-          image: AssetImage('assets/images/car.jpg'),
+          image: AssetImage('assets/images/img.jpg'),
           fit: BoxFit.cover,
         ),
       ),
@@ -165,7 +167,7 @@ class DiscoverScreen extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
-                      color: Colors.white),
+                      color: const Color.fromARGB(255, 255, 255, 255)),
                 ),
                 SizedBox(height: 5),
                 ElevatedButton(
