@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:login/classic_screen.dart';
 import 'package:login/dicover_screen.dart';
 import 'package:login/me_screen.dart';
+import 'package:login/daily_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -19,12 +20,12 @@ class HomeScreen extends StatelessWidget {
               context,
               MaterialPageRoute(builder: (context) => ClassicPlanScreen()),
             );
-            // } else if (index == 2) {
-            //   // If "Personal" is tapped
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(builder: (context) => HomeScreen()),
-            //   );
+          } else if (index == 3) {
+            // If "Personal" is tapped
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => DailyReportScreen()),
+            );
           } else if (index == 1) {
             // If "Daily" is tapped
             Navigator.push(
