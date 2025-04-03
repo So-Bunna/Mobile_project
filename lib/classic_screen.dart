@@ -68,24 +68,24 @@ class _ClassicPlanScreenState extends State<ClassicPlanScreen> {
               context,
               MaterialPageRoute(builder: (context) => DiscoverScreen()),
             );
-          } else if (index == 2) {
-            // If "Personal" is tapped
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => ClassicPlanScreen()),
-            );
-          } else if (index == 3) {
-            // If "Daily" is tapped
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => ClassicPlanScreen()),
-            );
-          } else if (index == 4) {
-            // If "Me" is tapped
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => ClassicPlanScreen()),
-            );
+            // } else if (index == 2) {
+            //   // If "Personal" is tapped
+            //   Navigator.push(
+            //     context,
+            //     MaterialPageRoute(builder: (context) => ClassicPlanScreen()),
+            //   );
+            // } else if (index == 3) {
+            //   // If "Daily" is tapped
+            //   Navigator.push(
+            //     context,
+            //     MaterialPageRoute(builder: (context) => ClassicPlanScreen()),
+            //   );
+            // } else if (index == 4) {
+            //   // If "Me" is tapped
+            //   Navigator.push(
+            //     context,
+            //     MaterialPageRoute(builder: (context) => ClassicPlanScreen()),
+            //   );
           }
         },
         items: const [

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:login/classic_screen.dart';
 import 'package:login/create_acc.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -62,7 +63,12 @@ class LoginScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ClassicPlanScreen()));
+                  },
                   child: Text("Login", style: TextStyle(color: Colors.white)),
                 ),
               ),
