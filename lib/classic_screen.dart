@@ -1,4 +1,7 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
+import 'package:login/dicover_screen.dart';
 
 class ClassicPlanScreen extends StatefulWidget {
   const ClassicPlanScreen({super.key});
@@ -54,17 +57,44 @@ class _ClassicPlanScreenState extends State<ClassicPlanScreen> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.blue,
-        unselectedItemColor: Colors.black54,
-        showUnselectedLabels: true,
+        unselectedItemColor: Colors.black,
+        currentIndex: 0,
+        onTap: (index) {
+          if (index == 1) {
+            // If "Discover" is tapped
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => DiscoverScreen()),
+            );
+          } else if (index == 2) {
+            // If "Personal" is tapped
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ClassicPlanScreen()),
+            );
+          } else if (index == 3) {
+            // If "Daily" is tapped
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ClassicPlanScreen()),
+            );
+          } else if (index == 4) {
+            // If "Me" is tapped
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ClassicPlanScreen()),
+            );
+          }
+        },
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Classic'),
-          BottomNavigationBarItem(icon: Icon(Icons.explore), label: 'Discover'),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Discover'),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Personal'),
           BottomNavigationBarItem(
               icon: Icon(Icons.calendar_today), label: 'Daily'),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle), label: 'Me'),
+          BottomNavigationBarItem(icon: Icon(Icons.more_horiz), label: 'Me'),
         ],
       ),
       body: Padding(

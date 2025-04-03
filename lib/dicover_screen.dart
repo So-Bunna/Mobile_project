@@ -1,18 +1,9 @@
 import 'package:flutter/material.dart';
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: DiscoverScreen(),
-    );
-  }
-}
+import 'package:login/classic_screen.dart';
+import 'package:login/sixpack.dart';
+import 'package:login/arm.dart';
+import 'package:login/chest.dart';
+import 'package:login/leg.dart';
 
 class DiscoverScreen extends StatelessWidget {
   @override
@@ -23,7 +14,34 @@ class DiscoverScreen extends StatelessWidget {
         selectedItemColor: Colors.blue,
         unselectedItemColor: Colors.black,
         currentIndex: 1,
-        items: [
+        onTap: (index) {
+          if (index == 0) {
+            // If "Classic" is tapped
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ClassicPlanScreen()),
+            );
+          } else if (index == 2) {
+            // If "Personal" is tapped
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ClassicPlanScreen()),
+            );
+          } else if (index == 3) {
+            // If "Daily" is tapped
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ClassicPlanScreen()),
+            );
+          } else if (index == 4) {
+            // If "Me" is tapped
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ClassicPlanScreen()),
+            );
+          }
+        },
+        items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Classic'),
           BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Discover'),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Personal'),
@@ -59,11 +77,11 @@ class DiscoverScreen extends StatelessWidget {
                   _buildWorkoutCard(context, 'Six pack', '8 Workouts',
                       'assets/images/sixpack.jpg', SixPackScreen()),
                   _buildWorkoutCard(context, 'Arm', '8 Workouts',
-                      'assets/images/hand.jpg', null),
+                      'assets/images/hand.jpg', Arm()),
                   _buildWorkoutCard(context, 'Chest', '7 Workouts',
-                      'assets/images/fit.jpg', null),
+                      'assets/images/fit.jpg', Chest()),
                   _buildWorkoutCard(context, 'Butt & Leg', '8 Workouts',
-                      'assets/images/foot.jpg', null),
+                      'assets/images/foot.jpg', Leg()),
                 ],
               ),
               SizedBox(height: 20),
@@ -184,16 +202,6 @@ class DiscoverScreen extends StatelessWidget {
           )
         ],
       ),
-    );
-  }
-}
-
-class SixPackScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text('Six Pack Workouts')),
-      body: Center(child: Text('Workout details for Six Pack!')),
     );
   }
 }
