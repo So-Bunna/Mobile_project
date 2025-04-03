@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:login/dicover_screen.dart';
 import 'package:login/me_screen.dart';
+import 'package:login/personal_screen.dart';
 
 class ClassicPlanScreen extends StatefulWidget {
   const ClassicPlanScreen({super.key});
@@ -69,12 +70,12 @@ class _ClassicPlanScreenState extends State<ClassicPlanScreen> {
               context,
               MaterialPageRoute(builder: (context) => DiscoverScreen()),
             );
-            // } else if (index == 2) {
-            //   // If "Personal" is tapped
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(builder: (context) => HomeScreen()),
-            //   );
+          } else if (index == 2) {
+            // If "Personal" is tapped
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => HomeScreen()),
+            );
             // } else if (index == 3) {
             //   // If "Daily" is tapped
             //   Navigator.push(

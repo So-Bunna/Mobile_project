@@ -68,6 +68,8 @@ flutter:
     - assets\images\fat_burn.jpg
     - assets\images\logo.png
     - assets\images\img.jpg
+    - assets\images\personal1.jpg
+    - assets\images\personal2.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login/classic_screen.dart';
 import 'package:login/me_screen.dart';
-
+import 'package:login/personal_screen.dart';
 import 'package:login/sixpack.dart';
 import 'package:login/arm.dart';
 import 'package:login/chest.dart';
@@ -23,12 +23,12 @@ class DiscoverScreen extends StatelessWidget {
               context,
               MaterialPageRoute(builder: (context) => ClassicPlanScreen()),
             );
-            // } else if (index == 2) {
-            //   // If "Personal" is tapped
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(builder: (context) => HomeScreen()),
-            //   );
+          } else if (index == 2) {
+            // If "Personal" is tapped
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => HomeScreen()),
+            );
             // } else if (index == 3) {
             //   // If "Daily" is tapped
             //   Navigator.push(

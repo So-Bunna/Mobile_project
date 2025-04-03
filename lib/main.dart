@@ -6,6 +6,7 @@ import 'package:login/success_acc.dart';
 import 'package:login/dicover_screen.dart';
 import 'package:login/classic_screen.dart';
 import 'package:login/me_screen.dart';
+import 'package:login/personal_screen.dart';
 
 void main() {
   runApp(
