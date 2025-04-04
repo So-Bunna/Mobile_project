@@ -5,6 +5,8 @@ import 'package:login/me_screen.dart';
 import 'package:login/daily_screen.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -131,6 +133,8 @@ class HomeScreen extends StatelessWidget {
 }
 
 class MyScreen extends StatelessWidget {
+  const MyScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     double screenWidth = MediaQuery.of(context).size.width;

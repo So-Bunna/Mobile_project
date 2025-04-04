@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:login/login_screen.dart';
 
 class SuccessAccountScreen extends StatelessWidget {
+  const SuccessAccountScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

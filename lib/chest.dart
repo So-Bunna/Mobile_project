@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:login/dicover_screen.dart';
 
 class Chest extends StatelessWidget {
+  const Chest({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

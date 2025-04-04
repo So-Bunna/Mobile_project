@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:login/confirm_acc.dart';
 
 class CreateAcc extends StatelessWidget {
+  const CreateAcc({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

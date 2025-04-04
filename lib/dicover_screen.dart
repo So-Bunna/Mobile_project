@@ -9,6 +9,8 @@ import 'package:login/chest.dart';
 import 'package:login/leg.dart';
 
 class DiscoverScreen extends StatelessWidget {
+  const DiscoverScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

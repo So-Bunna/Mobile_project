@@ -3,6 +3,7 @@ import 'package:login/classic_screen.dart';
 import 'package:login/dicover_screen.dart';
 import 'package:login/personal_screen.dart';
 import 'package:login/daily_screen.dart';
+import 'package:login/login_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -114,7 +115,12 @@ class ProfileScreen extends StatelessWidget {
               child: SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => LoginScreen()));
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.grey[300],
                     foregroundColor: Colors.black,

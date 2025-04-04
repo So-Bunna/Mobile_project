@@ -4,6 +4,8 @@ import 'package:login/create_acc.dart';
 import 'package:login/first_log.dart';
 
 class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

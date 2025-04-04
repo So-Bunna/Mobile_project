@@ -1,10 +1,10 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:login/dicover_screen.dart';
 import 'package:login/me_screen.dart';
 import 'package:login/personal_screen.dart';
 import 'package:login/daily_screen.dart';
+import 'package:login/L4.dart';
 
 class ClassicPlanScreen extends StatefulWidget {
   const ClassicPlanScreen({super.key});
@@ -16,27 +16,27 @@ class ClassicPlanScreen extends StatefulWidget {
 class _ClassicPlanScreenState extends State<ClassicPlanScreen> {
   String selectedCategory = 'Beginner';
 
-  final Map<String, List<Map<String, String>>> workouts = {
+ final Map<String, List<Map<String, String>>> workouts = {
     'Beginner': [
-      {'title': 'Abs Beginner', 'duration': '18 mins'},
-      {'title': 'Chest Beginner', 'duration': '8 mins'},
-      {'title': 'Arm Beginner', 'duration': '16 mins'},
-      {'title': 'Leg Beginner', 'duration': '22 mins'},
-      {'title': 'Shoulder & Back Beginner', 'duration': '20 mins'},
+      {'title': 'Abs Beginner', 'duration': '18 mins', 'image': 'assets/images/ABS.jpg'},
+      {'title': 'Chest Beginner', 'duration': '8 mins', 'image': 'assets/images/chest.jpg'},
+      {'title': 'Arm Beginner', 'duration': '16 mins', 'image': 'assets/images/Build_Shoulders.jpg'},
+      {'title': 'Leg Beginner', 'duration': '22 mins', 'image': 'assets/images/Leg.jpg'},
+      {'title': 'Shoulder & Back Beginner', 'duration': '20 mins', 'image': 'assets/images/back_shoulder.jpg'},
     ],
     'Intermediate': [
-      {'title': 'Abs Intermediate', 'duration': '25 mins'},
-      {'title': 'Chest Intermediate', 'duration': '13 mins'},
-      {'title': 'Arm Intermediate', 'duration': '24 mins'},
-      {'title': 'Leg Intermediate', 'duration': '36 mins'},
-      {'title': 'Shoulder & Back Intermediate', 'duration': '17 mins'},
+      {'title': 'Abs Intermediate', 'duration': '25 mins' , 'image': 'assets/images/ABS.jpg'},
+      {'title': 'Chest Intermediate', 'duration': '13 mins', 'image': 'assets/images/chest.jpg'},
+      {'title': 'Arm Intermediate', 'duration': '24 mins', 'image': 'assets/images/Build_Shoulders.jpg'},
+      {'title': 'Leg Intermediate', 'duration': '36 mins', 'image': 'assets/images/Leg.jpg'},
+      {'title': 'Shoulder & Back Intermediate', 'duration': '17 mins', 'image': 'assets/images/back_shoulder.jpg'},
     ],
     'Advanced': [
-      {'title': 'Abs Advanced', 'duration': '30 mins'},
-      {'title': 'Chest Advanced', 'duration': '15 mins'},
-      {'title': 'Arm Advanced', 'duration': '28 mins'},
-      {'title': 'Leg Advanced', 'duration': '40 mins'},
-      {'title': 'Shoulder & Back Advanced', 'duration': '25 mins'},
+      {'title': 'Abs Advanced', 'duration': '30 mins', 'image': 'assets/images/ABS.jpg'},
+      {'title': 'Chest Advanced', 'duration': '15 mins', 'image': 'assets/images/chest.jpg'},
+      {'title': 'Arm Advanced', 'duration': '28 mins', 'image': 'assets/images/Build_Shoulders.jpg'},
+      {'title': 'Leg Advanced', 'duration': '40 mins', 'image': 'assets/images/Leg.jpg'},
+      {'title': 'Shoulder & Back Advanced', 'duration': '25 mins', 'image': 'assets/images/back_shoulder.jpg'},
     ],
   };
 
@@ -168,6 +168,7 @@ class _ClassicPlanScreenState extends State<ClassicPlanScreen> {
         ),
       ),
     );
+    
   }
 
   // Helper Widget: Horizontal Workout Card

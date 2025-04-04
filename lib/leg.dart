@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:login/dicover_screen.dart';
 
 class Leg extends StatelessWidget {
+  const Leg({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

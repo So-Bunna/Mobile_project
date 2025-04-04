@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:login/classic_screen.dart';
+import 'package:login/L4.dart';
 
 class PersonalCoachScreen extends StatelessWidget {
-  const PersonalCoachScreen({Key? key}) : super(key: key);
+  const PersonalCoachScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +66,7 @@ class PersonalCoachScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => ClassicPlanScreen()));
+                            builder: (context) => FitnessApp()));
                   },
                   child: const Text(
                     "I’M READY",

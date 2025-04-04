@@ -5,6 +5,8 @@ import 'package:login/me_screen.dart';
 import 'package:login/personal_screen.dart';
 
 class DailyReportScreen extends StatelessWidget {
+  const DailyReportScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
